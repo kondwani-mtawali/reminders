@@ -3,3 +3,6 @@
 
 # Ignore other database files
 *.db
+
+#Ignore .venv
+.venv/
