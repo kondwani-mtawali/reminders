@@ -1,4 +1,9 @@
-""" """
+"""
+models.py
+Handles the Reminder model that is used for the Reminders web application
+April 1, 2025
+Grant Wells
+"""
 
 from django.db import models
 
@@ -8,12 +13,11 @@ class Reminder(models.Model):
     title = models.CharField(max_length=255)  # Title of the reminder
     description = models.TextField(blank=True, null=True)  # Optional description
     remind_by = models.DateTimeField()  # Date and time when the reminder should trigger
-    is_reminder_complete = models.BooleanField(
-        default=False
-    )  # Status of the reminder (Complete or not complete)
-    rem_created_at = models.DateTimeField(
-        auto_now_add=True
-    )  # Create time stamp of when reminder was created.
+
+    # Status of the reminder (Complete or not complete)
+    is_reminder_complete = models.BooleanField(default=False)
+    # Create time stamp of when reminder was created.
+    rem_created_at = models.DateTimeField(auto_now_add=True)
 
 
 def __str__(self):
