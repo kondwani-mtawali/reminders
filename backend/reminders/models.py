@@ -1,3 +1,6 @@
+from django.db import models
+
+# Create your models here.
 """
 models.py
 Handles the Reminder model that is used for the Reminders web application
