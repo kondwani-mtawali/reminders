@@ -8,8 +8,6 @@ April 1, 2025
 Grant Wells
 """
 
-from django.db import models
-
 
 # Define the Reminder model.
 class Reminder(models.Model):

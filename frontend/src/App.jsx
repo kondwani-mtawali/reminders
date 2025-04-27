@@ -2,9 +2,26 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { reminderDeleteCall } from './reminderDeleteCall';
+
 
 function App() {
   const [count, setCount] = useState(0)
+
+  // Add a state for reminders
+  const [reminders, setReminders] = useState([])
+
+  const handleDelete = async (id) => {
+    try {
+      await reminderDeleteCall.deleteReminder(id);
+
+      // Update after successful deletion
+      setReminders(reminders.filter(reminder => reminder.id !== id));
+    } catch (error) {
+      console.error("Failed to delete reminder:", error);
+      alert("Failed to delete reminder");
+    }
+  };
 
   return (
     <>
