@@ -1,7 +1,34 @@
-// ReminderAPI.jsx
 // Grant Wells
+// Kondwani Mtawali | 04.28
+/**
+ * REACT QUERY HOOK: Reminder Deletion
+ */
+import { ServerRouter } from "react-router";
+import { API_URL } from "../constants";
+import { useState, useEffect } from "react";
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 
+//Kondwani's Function
+export function useRemindersDelete() {
+    const queryClient = useQueryClient();
 
+    return useMutation({
+        mutationFn: async (id) => {
+            const response = await fetch(`${API_URL}/reminders/${id}/`, {
+                method: 'DELETE',
+
+            });
+            if (!response.ok) {
+                throw new Error('FAILED DELETION');
+            }
+        },
+        onSuccess: () => {
+            queryClient.invalidateQueries(['reminder']); //Automatically re-fetches list of updated reminders
+        }
+    });
+}
+
+//Grant's Function Below
 export const reminderDeleteCall = {
     /**
      * Deletes a reminder by its ID
