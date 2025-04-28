@@ -1,4 +1,6 @@
-import React from "react";
+//Kondwani Mtawali | 04.28
+
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 import { useRemindersCreate } from "../hooks/useReminders";
 
@@ -7,9 +9,13 @@ export function RemindersCreate() {
         useRemindersCreate();
     const navigate = useNavigate();
 
-    if (successful) {
-        navigate("/");
-    }
+    useEffect(() => {
+        if (successful) {
+            navigate("/");
+        }
+    }) //navigate inside useEffect to prevent update while rendering
+
+
     if (loading) {
         return <>
             <h1>--Loading--</h1>
