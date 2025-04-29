@@ -16,7 +16,7 @@ Features
   5. Includes a passing test suite with at least three non-trivial tests.
 
 Usage
-How to Start the Reminders Project
+- How to Start the Reminders Project
 
 1. Backend
     a. Navigate to the backend project folder:
@@ -24,19 +24,20 @@ How to Start the Reminders Project
          - cd backend
    
     b. Set up a Virtual Environment using:
-         - python3 -m venv .venv
+          1. python3 -m venv .venv
+          2. python3 source "virtualenvironmentName"/bin/activate
    
     c. Install dependencies using:
          If you are using UV:
-           - uv sync
+           1. uv sync
          Otherwise:
-           - pip install
+           2. pip install
 
      d. Run Migrations:
-           - python3 manage.py migrate
+           1. python3 manage.py migrate
 
      e. Start the Backend Server:
-           - python3 manage.py runserver
+           1. python3 manage.py runserver
 
 3. IMPORTANT STEP - Start a NEW Terminal for the frontend, KEEP the backend terminal running.
 
@@ -51,7 +52,7 @@ How to Start the Reminders Project
          - npm run dev
 
 5. Navigate to:
-         - http://localhost:8000
+         - http://localhost:5173
 
 6. Create, Manage, Delete Reminders.
 

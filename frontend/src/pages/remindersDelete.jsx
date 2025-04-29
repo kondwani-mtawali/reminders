@@ -37,7 +37,8 @@ export function RemindersDelete() {
             <h1>Something Went Wrong!</h1>
         </>
     }
-    //Form for user to ener reminder Id to delete, input field for entering the reminder ID, along with a delete button
+
+    // Form for user to enter reminder ID to delete, input field for entering the reminder ID, along with a delete button
     return <>
         <h1>Delete Reminder</h1>
         <form onSubmit={handleDelete}>
