@@ -30,10 +30,11 @@ function App() {
   }
   return (<>
     <h1>Reminders</h1>
+    <p> ID numbers indicated on the left of reminder title</p>
     <Link to="/reminders/create">| Create Your Reminder | </Link>
     <Link to="/reminders/delete:id">  Delete Reminders | </Link>
     <Link to="/reminders/reschedule:id">Reschedule Reminder |</Link>
-    {reminders.map(reminder => <h2 key={reminder.id}>{reminder.title}</h2>)}
+    {reminders.map(reminder => <h2 key={reminder.id}> {reminder.id}. {reminder.title}</h2>)}
   </>); //Success
 
 

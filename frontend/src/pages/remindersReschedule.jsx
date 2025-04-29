@@ -13,7 +13,7 @@ export function RemindersReschedule() {
 
     const handleReschedule = (e) => {
         e.preventDefault();
-        mutate({ id, newRemindBy });
+        mutate({ id: Number(id), newRemindBy });
     };
 
     useEffect(() => {
@@ -36,7 +36,7 @@ export function RemindersReschedule() {
     return <>
         <h1>Reschedule Reminder</h1>
         <form onSubmit={handleReschedule}>
-            <input type="text" placeholder="Reminder ID" value={id} onChange={(e) => setId(e.target.value)} />
+            <input type="number" placeholder="Reminder ID: Type Integer" value={id} onChange={(e) => setId(e.target.value)} />
             <input type="datetime-local" value={newRemindBy} placeholder="Set New Date"
                 onChange={(e) => setNewRemindBy(e.target.value)} />
             <button type="submit">Reschedule</button>
