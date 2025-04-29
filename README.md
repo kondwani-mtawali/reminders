@@ -20,11 +20,11 @@ Usage
 
 BACKEND
 1. Navigate to the backend project folder: (Assuming your in the Reminders folder):
-   - cd backend
+   -     cd backend
    
 2. Set up a Virtual Environment using:
-   - python3 -m venv .venv
-   - source "virtualenvironmentName"/bin/activate
+   -     python3 -m venv .venv
+   -     source "virtualenvironmentName"/bin/activate
    
 3. Install dependencies using:
    - If you are using UV:
@@ -32,28 +32,28 @@ BACKEND
    -   Oherwise:
    -     pip install
 
-     d. Run Migrations:
-           1. python3 manage.py migrate
+4. Run Migrations:
+   -      python3 manage.py migrate
 
-     e. Start the Backend Server:
-           1. python3 manage.py runserver
+5. Start the Backend Server:
+   -     python3 manage.py runserver
 
-5. IMPORTANT STEP - Start a NEW Terminal for the frontend, KEEP the backend terminal running.
+6. IMPORTANT STEP - Start a NEW Terminal for the frontend, KEEP the backend terminal running.
 
-6. Frontend
-    a. Navigate to the Frontend folder:
-         - cd frontend
+FRONTEND
+1. Navigate to the Frontend folder:
+   -     cd frontend
 
-    b. Install Dependencies:
-         - npm install
+2. Install Dependencies:
+   -     npm install
 
-    c. Start the Frontend:
-         - npm run dev
+4. Start the Frontend:
+   -     npm run dev
 
-7. Navigate to:
-         - http://localhost:5173
+5. Navigate to:
+   -      http://localhost:5173
 
-8. Create, Manage, Delete Reminders.
+10. Create, Manage, Delete Reminders.
 
    
    
