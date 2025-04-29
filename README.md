@@ -1,8 +1,8 @@
 Reminders
-Description
-  Reminders is a decoupled web application designed to help users create 
-  and manage their reminders. It is built using a React frontend and Django backend.
-  Reminders allows users to schedule reminders, reschedule them, and delete reminders.
+  - Description
+      - Reminders is a decoupled web application designed to help users create
+        and manage their reminders. It is built using a React frontend and Django backend.
+        Reminders allows users to schedule reminders, reschedule them, and delete reminders.
 
 Features
   1. Create a reminder with a "remind by" time.
