@@ -1,7 +1,13 @@
 // Grant Wells
 // Kondwani Mtawali | 04.28
 /**
- * REACT QUERY HOOK: Reminder Deletion
+ * deleteReminders.js
+ *
+ * React Query custom hook for deleting a reminder by ID.
+ * - Sends a DELETE request to the backend API.
+ * - Invalidates cached reminder queries after a successful deletion to refresh data.
+ *
+ * @returns { mutate, isPending, isError, isSuccess } - Mutation handlers for deleting reminders.
  */
 import { ServerRouter } from "react-router";
 import { API_URL } from "../constants";

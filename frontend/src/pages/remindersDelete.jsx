@@ -1,4 +1,14 @@
-//Kondwani Mtawali | 04.28
+/**
+ * RemindersDelete.jsx
+ * 
+ * Page component for deleting an existing reminder by its ID.
+ * - Provides a form for the user to input the reminder ID to delete.
+ * - Uses a custom React Query mutation hook to perform the deletion.
+ * - Redirects to the homepage after successful deletion.
+ * - Displays loading and error states during the deletion process.
+ */
+
+
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
@@ -27,7 +37,7 @@ export function RemindersDelete() {
             <h1>Something Went Wrong!</h1>
         </>
     }
-
+    //Form for user to ener reminder Id to delete, input field for entering the reminder ID, along with a delete button
     return <>
         <h1>Delete Reminder</h1>
         <form onSubmit={handleDelete}>
