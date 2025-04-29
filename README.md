@@ -39,7 +39,7 @@ BACKEND
    -     python3 manage.py runserver
 
 6. IMPORTANT STEP - Start a NEW Terminal for the frontend, KEEP the backend terminal running.
-
+-
 FRONTEND
 1. Navigate to the Frontend folder:
    -     cd frontend
