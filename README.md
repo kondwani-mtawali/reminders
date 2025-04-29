@@ -18,20 +18,19 @@ Features
 Usage
 - How to Start the Reminders Project
 
-1. Backend
-    a. Navigate to the backend project folder:
-         (Assuming your in the Reminders folder)
-         - cd backend
+BACKEND
+1. Navigate to the backend project folder: (Assuming your in the Reminders folder):
+   - cd backend
    
-    b. Set up a Virtual Environment using:
-          1. python3 -m venv .venv
-          2. python3 source "virtualenvironmentName"/bin/activate
+2. Set up a Virtual Environment using:
+   - python3 -m venv .venv
+   - source "virtualenvironmentName"/bin/activate
    
-    c. Install dependencies using:
-         If you are using UV:
-           1. uv sync
-         Otherwise:
-           2. pip install
+3. Install dependencies using:
+   - If you are using UV:
+   -     uv sync
+   -   Oherwise:
+   -     pip install
 
      d. Run Migrations:
            1. python3 manage.py migrate
@@ -39,9 +38,9 @@ Usage
      e. Start the Backend Server:
            1. python3 manage.py runserver
 
-3. IMPORTANT STEP - Start a NEW Terminal for the frontend, KEEP the backend terminal running.
+5. IMPORTANT STEP - Start a NEW Terminal for the frontend, KEEP the backend terminal running.
 
-4. Frontend
+6. Frontend
     a. Navigate to the Frontend folder:
          - cd frontend
 
@@ -51,10 +50,10 @@ Usage
     c. Start the Frontend:
          - npm run dev
 
-5. Navigate to:
+7. Navigate to:
          - http://localhost:5173
 
-6. Create, Manage, Delete Reminders.
+8. Create, Manage, Delete Reminders.
 
    
    
