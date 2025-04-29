@@ -31,7 +31,7 @@ export function RemindersDelete() {
     return <>
         <h1>Delete Reminder</h1>
         <form onSubmit={handleDelete}>
-            <input type="text" placeholder="Reminder ID" value={id} onChange={(e) => setId(e.target.value)} />
+            <input type="text" placeholder="Reminder ID: Type Integer" value={id} onChange={(e) => setId(e.target.value)} />
             <button type="submit">Delete</button>
         </form>
     </>
