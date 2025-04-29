@@ -39,7 +39,7 @@ BACKEND
    -     python3 manage.py runserver
 
 6. IMPORTANT STEP - Start a NEW Terminal for the frontend, KEEP the backend terminal running.
--
+   
 FRONTEND
 1. Navigate to the Frontend folder:
    -     cd frontend
@@ -54,6 +54,15 @@ FRONTEND
    -      http://localhost:5173
 
 10. Create, Manage, Delete Reminders.
+
+CONTACT:
+
+Kondwani Mtawali
+kondwani.mtawali@student.cune.edu
+
+Grant Wells
+gswells0206@gmail.com
+
 
    
    
