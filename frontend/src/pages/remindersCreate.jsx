@@ -1,5 +1,12 @@
-//Kondwani Mtawali | 04.28
-
+/**
+ * RemindersCreate.jsx
+ * 
+ * Page component for creating a new reminder.
+ * - Uses a custom hook to manage form state and API interaction.
+ * - Includes a form with fields for reminder title and reminder time.
+ * - Handles loading and error states 
+ * - Redirects back to the homepage upon successful creation of reminder
+ */
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 import { useRemindersCreate } from "../hooks/useReminders";
@@ -26,7 +33,7 @@ export function RemindersCreate() {
             <h1>Something Went Wrong!</h1>
         </>
     }
-
+    //Form for new reminders, includes input features for title and time, along with a create reminder button
     return <>
         <h1>Create Reminder</h1>
         <form onSubmit={createReminder}>

@@ -1,4 +1,13 @@
 //Kondwani Mtawali | 04.28
+/**
+ * RemindersReschedule.jsx
+ * 
+ * Page component for rescheduling an existing reminder's remindBy date/time.
+ * - Provides a form for users to input the reminder ID and a new scheduled date.
+ * - Uses a custom React Query mutation hook to send a PATCH request to the backend.
+ * - Displays loading and error states during the rescheduling process.
+ * - Redirects to the homepage upon successful rescheduling.
+ */
 
 import React from "react";
 import { useState, useEffect } from "react";
@@ -33,6 +42,7 @@ export function RemindersReschedule() {
         </>
     }
 
+    //Another form for users to enter id number of reminder, allows input for new date, along with a reschedule button
     return <>
         <h1>Reschedule Reminder</h1>
         <form onSubmit={handleReschedule}>

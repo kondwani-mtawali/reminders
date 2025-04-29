@@ -1,13 +1,26 @@
+/**
+ * useReminders.js
+ * 
+ * Custom React hook for fetching a list of reminders from the backend API.
+ * - Manages reminders state, loading status, and error handling.
+ * - Sends a GET request to retrieve all reminders.
+ * - Automatically fetches data on component mount.
+ *
+ * @returns { reminders, loading, error } - List of reminders and fetch status indicators.
+ */
+
+
 import { ServerRouter } from "react-router";
 import { API_URL } from "../constants";
 import { useState, useEffect } from "react";
 
-//Kondwani | 04/27
+// Custom hook to fetch list of reminders from the backend API
 export function useRemindersList() {
     const [reminders, setReminders] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
+    // Fetch reminders on component mount and manage loading/error states
     useEffect(() => {
         setLoading(true);
         fetch(API_URL + "/reminders/", {
@@ -36,6 +49,7 @@ export function useRemindersList() {
     return { reminders, loading, error }
 }
 
+// Custom hook to create a new reminder through the backend API
 export function useRemindersCreate() {
     const [title, setTitle] = useState("");
     const [remindBy, setRemindBy] = useState("");
@@ -45,6 +59,7 @@ export function useRemindersCreate() {
 
     /**
      * Creating a new reminder
+     * Sends POST request with title and remindBy fields
      * @param {SubmitEvent} event 
      */
 
@@ -77,6 +92,7 @@ export function useRemindersCreate() {
             })
     };
 
+    // Return form field setters, loading/success/error states, and create function
     return {
         title,
         setTitle,

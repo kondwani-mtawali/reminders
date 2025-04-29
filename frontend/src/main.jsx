@@ -1,3 +1,14 @@
+/**
+ * main.jsx
+ *
+ * Entry point for the Reminders application.
+ * - Initializes React root .
+ * - Configures React Query client for global caching and state management.
+ * - Defines routes for creating, deleting, and rescheduling reminders.
+ * - Wraps the application in <StrictMode>, <QueryClientProvider>, and <BrowserRouter>.
+ */
+
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';

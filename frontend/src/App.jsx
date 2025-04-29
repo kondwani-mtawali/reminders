@@ -1,3 +1,13 @@
+/**
+ * App.jsx
+ * Main page for the Reminders application.
+ * - Fetches and displays a list of reminders 
+ * - Provides navigation links to create, delete, and reschedule reminders.
+ * - Shows reminder ID numbers next to each reminder title.
+ * - Handles loading and error states.
+ */
+
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -36,26 +46,6 @@ function App() {
     <Link to="/reminders/reschedule:id">Reschedule Reminder |</Link>
     {reminders.map(reminder => <h2 key={reminder.id}> {reminder.id}. {reminder.title}</h2>)}
   </>); //Success
-
-
-
-  //CODE BELOW IS GRANT
-  // const [count, setCount] = useState(0)
-
-  // Add a state for reminders
-  // const [setReminders] = useState([])
-
-  // const handleDelete = async (id) => {
-  //   try {
-  //     await reminderDeleteCall.deleteReminder(id);
-
-  //     // Update after successful deletion
-  //     setReminders(reminders.filter(reminder => reminder.id !== id));
-  //   } catch (error) {
-  //     console.error("Failed to delete reminder:", error);
-  //     alert("Failed to delete reminder");
-  //   }
-  // };
 
 }
 
